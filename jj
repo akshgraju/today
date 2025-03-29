@@ -1,0 +1,83 @@
+git init 
+git remote add origin ""
+git config --global user.email ""
+git add .
+git commit -m ""
+git push origin master
+
+git branch 
+git branch b1
+git checkout b1
+nano file1.txt
+git add .
+git commit -m "m"
+git branch b2
+git checkout b2
+nano file1.txt
+git add .
+git commit -m "m"
+(same file name and commit message
+different text inside)
+
+From OpenJDK:23
+WORKDIR /app
+COPY filename.java /app/packagename/filename.java
+RUN javac /app/packagename/filename.java
+CMD ["java","packagename.filename].
+
+
+
+docker build -t my-java-app .
+docker run -it my-java-app
+
+javac filename.java
+java filename
+
+
+
+
+
+
+// HelloWorld.java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+
+// NumberAdder.java
+public class NumberAdder {
+    public static void main(String[] args) {
+        // Predefined values
+        int num1 = 10; // You can change this value
+        int num2 = 20; // You can change this value
+        
+        // Calculate the sum
+        int sum = num1 + num2;
+        
+        // Print the result
+        System.out.println("The sum of " + num1 + " and " + num2 + " is: " + sum);
+    }
+}	
+
+
+
+// OddEvenChecker.java
+import java.util.Scanner;
+
+public class OddEvenChecker {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter a number to check if it is odd or even: ");
+        int numberToCheck = scanner.nextInt();
+        
+        if (numberToCheck % 2 == 0) {
+            System.out.println(numberToCheck + " is even.");
+        } else {
+            System.out.println(numberToCheck + " is odd.");
+        }
+        
+        scanner.close();
+    }
+
